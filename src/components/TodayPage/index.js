@@ -3,10 +3,10 @@ import Menu from "../Menu";
 import Date from "../Date";
 import { Container } from "./style";
 
-export default function TodayPage() {
+export default function TodayPage({token}) {
+    console.log(token);
     return (
         <Container>
-            <h1>Histórico</h1>
             <Top />
             <Date />
             <Menu />
