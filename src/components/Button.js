@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+
 const Button = styled.button`
 width: 303px;
 height: 45px;
@@ -11,6 +12,9 @@ border-radius: 5px;
 display: flex;
 align-items: center;
 justify-content: center;
+:disabled{
+    opacity: 0.7;
+}
 `
 export {
     Button
