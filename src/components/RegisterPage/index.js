@@ -46,7 +46,6 @@ export default function RegisterPage() {
     } 
 
 
-
     return (
         <Container>
             <MainLogo />

@@ -13,11 +13,10 @@ position: fixed;
 top: 0;
 left: 0;
 `;
-const ProfilePicture = styled.div`
+const ProfilePicture = styled.img`
 width: 51px;
 height: 51px;
 border-radius: 50%;
-background-color: #FFFFFF;
 `
 export {
     Container,

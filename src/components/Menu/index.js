@@ -1,13 +1,31 @@
-import { Container,Today } from "./style";
-import Vetor from "../../assets/hoje.png"
+import { Container, Today } from "./style";
+import { StyledLink } from "./style";
+import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
+import 'react-circular-progressbar/dist/styles.css';
+import { Link } from "react-router-dom";
+
+export default function Menu() {
+    const percentage = 60;
 
 
-export default function Menu(){
-    return(
-        <Container> 
-            <p>Hábitos</p>          
-            <Today src={Vetor} />  
-            <p>Histórico</p>         
-        </Container>
+    return (
+        <Container>
+            <StyledLink to="/habito">Hábitos </StyledLink>
+
+            <Link to="/hoje">
+                <Today>
+                    <CircularProgressbar value={percentage} text={`Hoje`} background backgroundPadding={6} styles={buildStyles({
+                        backgroundColor: "#3e98c7",
+                        textColor: "#fff",
+                        pathColor: "#fff",
+                        trailColor: "transparent"
+                    })}
+                    />
+
+                </Today>
+            </Link>
+
+            <StyledLink to="/historico">Histórico</StyledLink>
+        </Container >
     );
 }

@@ -2,10 +2,11 @@ import MainLogo from "../MainLogo";
 import { Input } from "../Input";
 import { Container, StyledLink } from "./style";
 import { Button } from "../Button";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Loading from "../Loading";
+import UserContext from "../../contexts/UserContext";
 
 
 
@@ -15,6 +16,8 @@ export default function LoginPage({setToken}) {
     const navigate=useNavigate();
     const [loading,setLoading] = useState(false);
     const [isDisable, setIsDisable]= useState(false);
+
+    const {setUser}=useContext(UserContext);
 
     function handleLogin(e){
         e.preventDefault();
@@ -28,6 +31,7 @@ export default function LoginPage({setToken}) {
         });
         
         promise.then(response=>{
+            setUser(response.data);
             setToken(response.data.token)
             navigate('/hoje')
         });

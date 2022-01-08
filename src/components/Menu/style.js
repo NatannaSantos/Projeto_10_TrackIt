@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container=styled.div`
 width: 375px;
@@ -11,19 +12,21 @@ left: 0;
 display: flex;
 align-items: center;
 justify-content: space-between;
-
-p{
+`;
+const StyledLink= styled(Link)`
     font-size: 18px;
     color: #52B6FF;
-}
-`;
-const Today=styled.img`
+    text-decoration: none;
+`
+const Today=styled.div`
 width: 91px;
 height: 91px;
-margin-bottom: 50px;
 z-index: 1;
+margin-bottom: 50px;
+
 `
 export{
     Container,
+    StyledLink,
     Today
 }
