@@ -1,10 +1,12 @@
 import { Container } from "./style";
 
-export default function MyHabit(){
+export default function MyHabit({activate, active}){   
+
+    
     return(
         <Container>
             <h1>Meus Hábitos</h1>
-            <button> + </button>
+            <button onClick={activate}> + </button>
         </Container>
     );
 }

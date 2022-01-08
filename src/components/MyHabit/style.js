@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
 width: 375px;
-padding: 10px;
+padding: 20px;
 padding-top: 100px;
 display: flex;
 align-items: center;
