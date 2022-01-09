@@ -32,17 +32,8 @@ const Week=styled.div`
 width: 250px;
 display: flex;
 justify-content: space-between;
-margin-left: 20px;
-`
-const DayButton=styled.button`
-width: 30px;
-height: 30px;
-border-radius: 5px;
-border: 1px solid #D4D4D4;
-background-color: #FFFFFF;
-color: #DBDBDB;
-font-size: 20px;
-`;
+margin-left: 20px;`
+
 const SaveBox=styled.div`
 width: 200px;
 display: flex;
@@ -71,7 +62,6 @@ export {
     Container,
     Input,
     Week,
-    DayButton,
     SaveBox,
     SaveButton,
     CancelButton
