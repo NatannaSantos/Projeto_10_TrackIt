@@ -27,6 +27,9 @@ margin-left: 20px;
     font-size: 20px;
     color: #DBDBDB;
 }
+:disabled{
+    background-color: #F2F2F2;
+}
 `;
 const Week=styled.div`
 width: 250px;
@@ -39,6 +42,9 @@ width: 200px;
 display: flex;
 margin-left:155px;
 margin-top: 20px;
+:disabled{
+    opacity: 0.7;
+}
 `;
 const CancelButton= styled.button `
 width: 84px;
@@ -47,6 +53,7 @@ background-color: #FFFFFF;
 border: none;
 color: #52B6FF;
 font-size: 16px;
+
 `
 const SaveButton=styled.button`
 width: 84px;

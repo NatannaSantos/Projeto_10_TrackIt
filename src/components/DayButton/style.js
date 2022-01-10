@@ -8,6 +8,7 @@ border: 1px solid #D4D4D4;
 background-color: ${props=> props.selected===false? "#FFFFFF" : "#CFCFCF"};
 color: ${props=> props.selected===false? "#DBDBDB" : "#FFFFFF"};
 font-size: 20px;
+margin-right: 5px;
 `;
 
 export {

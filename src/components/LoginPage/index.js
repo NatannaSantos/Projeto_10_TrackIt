@@ -52,8 +52,7 @@ export default function LoginPage({setToken}) {
                 <Input type="email" disabled={isDisable} value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email" />
                 <Input type="password" disabled={isDisable} value={password} onChange={(e) => setPassword(e.target.value)} placeholder="senha" />
                 <Button type="submit" disabled={isDisable}>{loading?  <Loading /> : "Entrar"}</Button>
-            </form>
-            
+            </form>           
 
             <StyledLink to="/cadastro">Não tem uma conta? Cadastre-se!</StyledLink>
         </Container>

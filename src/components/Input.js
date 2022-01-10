@@ -7,7 +7,6 @@ const Input = styled.input`
     margin-bottom: 16px;
 :disabled{
     background-color: #F2F2F2;
-;
 }
 
 ::placeholder{
