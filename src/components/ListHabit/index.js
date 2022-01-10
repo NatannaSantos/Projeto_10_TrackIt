@@ -21,12 +21,8 @@ export default function ListHabit({ name, days, weekDay, active,id, setRender, r
             promise.then(response=>{
                 setRender(!render);
             });
-        }
-
-
-        
+        }        
     }
-
     
     return (
         <Container>
